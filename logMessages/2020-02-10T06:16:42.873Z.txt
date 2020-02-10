@@ -1,0 +1,6 @@
+{
+  "id": "ICVzPbcf2D3hZ7cH2hzlb",
+  "author": "Tester",
+  "message": "Hello yo",
+  "date": "2020-02-10T06:16:42.873Z"
+}
