@@ -41,11 +41,12 @@ router.post(
 router.get("/", (req, res) => {
   const { datetime } = req.query;
   const fileNames = fs.readdirSync("./logMessages");
+  const COUNT_LASTMESSAGES = -30;
 
   if (!datetime) {
-    const messages = fileNames.map(file =>
-      JSON.parse(fs.readFileSync(`./logMessages/${file}`))
-    );
+    const messages = fileNames
+      .slice(COUNT_LASTMESSAGES)
+      .map(file => JSON.parse(fs.readFileSync(`./logMessages/${file}`)));
 
     return res.status(200).json({ messages });
   }

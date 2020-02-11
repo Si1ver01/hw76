@@ -1,0 +1,6 @@
+{
+  "id": "c6qCkqFiGKCM3x0kOS9Rn",
+  "author": "Dima",
+  "message": "mnogo teksta",
+  "date": "2020-02-10T15:00:26.886Z"
+}

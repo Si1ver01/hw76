@@ -1,0 +1,6 @@
+{
+  "id": "PI3JOyGliSBSitIge1eFO",
+  "author": "Dima",
+  "message": "join",
+  "date": "2020-02-10T15:00:32.495Z"
+}
