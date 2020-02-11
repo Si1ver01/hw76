@@ -37,7 +37,6 @@ const SendMessage = () => {
   };
 
   const modalHandler = () => {
-    // setModal(!modal);
     dispatch(clearError());
   };
 

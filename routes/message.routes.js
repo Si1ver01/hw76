@@ -51,6 +51,10 @@ router.get("/", (req, res) => {
     return res.status(200).json({ messages });
   }
 
+  if (isNaN(new Date(datetime).getDate())) {
+    return res.status(400).json({ error: "Wrong date" });
+  }
+
   const filterFileNames = fileNames.filter(file => {
     const fileDate = file.slice(0, -4);
     return new Date(fileDate) - new Date(datetime) > 0;
